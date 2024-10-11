@@ -1,0 +1,41 @@
+//1
+#include <iostream>
+using namespace std;
+
+int main() {
+	int numero;
+
+	do {
+		cout << "Ingrese un número (0 para salir): ";
+		cin >> numero;
+		if (numero != 0) {
+			cout << "Número multiplicado por 10: " << numero * 10 << endl;
+		}
+	} while (numero != 0);
+
+	return 0;
+}
+
+//2
+#include <iostream>
+using namespace std;
+
+int main() {
+	const int SIZE = 5;  
+	int arr[SIZE] = { 1, 7, 2, 8, 5 };  
+	int max = arr[0];
+
+	for (int i = 1; i < SIZE; i++) {
+		if (arr[i] > max) {
+			max = arr[i];
+		}
+	}
+
+	cout << "El mayor elemento del arreglo es: " << max << endl;
+
+	return 0;
+}
+
+//3
+
+
