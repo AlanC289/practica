@@ -1,0 +1,37 @@
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    double temp;
+    char op;
+    
+    cout<<"Conversion de temp"<<endl;
+    
+    cout<<"Farenheit"<<endl;
+    cout<<"Celcius "<<endl;
+    cout<<"¿A que unidad desea convertir?"<<endl; cin>>op;
+    
+    if((op=='F')||(op=='f'))
+    {
+        cout<<"Ingresar la temperatura en Celcius: "<<endl; cin>>temp;
+        temp=1.8*temp +32;
+        cout<<temp<<" Grados Farenheit";
+    }else if((op=='C')||(op=='c'))
+    {
+        cout<<"Ingresar la temperatura en Farenheit: "<<endl; cin>>temp;
+        temp=(temp - 32)/1.8;
+        cout<<temp<<" Grados Celcius";
+    }else
+    {
+        cout<<"Ingrese F o C";
+    }
+    
+    
+
+    return 0;
+}
+
+
