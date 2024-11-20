@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+
+double derivadaFuncion(int a, int b)
+{
+  
+    a = a * b;
+    b = b - 1;
+    return a,b;
+    
+}
+
+double integrarFuncion()
+{
+    return 0;
+}
+
+int main()
+{
+    int opc,a,b;
+    
+    cout <<"#####################################"<<endl;
+    cout <<"Derivada e Integral de la forma ax^b"<<endl;
+    cout <<"#####################################"<<endl;
+    cout <<endl;
+    cout<<"Eliga una opción"<<endl;
+    cout<<"1. Derivada"<<endl;
+    cout<<"2. Integral"<<endl;
+    cin>>opc;
+    
+    switch(opc)
+    {
+    case 1: 
+    cout<<" #### ax^b ####"<<endl;
+    cout<<"Ingrese valor de a: "<<endl;cin>>a;
+    cout<<"Ingrese valor de b: "<<endl;cin>>b;
+    a = a * b;
+    b = b - 1;
+   cout<<"Derivada:"<<a<<"x^"<<b<<endl;
+    break;
+    
+    case 2: 
+    cout<<"#### ax^b ####"<<endl;
+    cout<<"Ingrese valor de a: "<<endl;cin>>a;
+    cout<<"Ingrese valor de b: "<<endl;cin>>b;
+    b= (b + 1/b + 1);
+    cout<<"Integral: "<<a<<" x"<<b<<"/"<<b<<" + C"<<endl;
+    break;
+    
+    default: cout<<"Opcion no disponible"<<endl; break;
+    
+    
+       
+       
+        
+      
+        
+    }
+}
+        
