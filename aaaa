@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+
+float x;
+
+void pedir_numeros();
+void al_cuadrado(float x);
+
+
+
+
+int main()
+{
+ cout<<"##########################"<<endl;
+ cout<<"Elevar números al cuadrado"<<endl;
+ cout<<"##########################"<<endl;
+ cout<<endl;
+ 
+ pedir_numeros();
+ al_cuadrado (x);
+ 
+   
+}
+
+void pedir_numeros()
+{
+   cout<<"Digite 1 número: "<<endl; cin>>x;
+}
+
+void al_cuadrado(float x)
+{
+  float cuadrado= x*x;
+  cout<<"El cuadrado de"<<x<<"es: "<<cuadrado<<endl;
+}
+
+
+
+ #include<iostream>
+ #include<cmath>
+ using namespace std;
+ 
+ float numero;
+ void pedirnumero();
+ void sacarDecimales(float numero);
+ 
+ int main()
+ {
+     pedirnumero();
+     sacarDecimales(numero);
+ }
+ 
+ void pedirnumero()
+ {
+     cout<<"Ingresa un numero: "<<endl; cin>>numero;
+ }
+ 
+ void sacarDecimales(float numero)
+ {
+     float parte_entera,parte_fraccionaria;
+     parte_fraccionaria = modf(numero , &parte_entera);  //separar la parte decimal de un número 
+     cout <<"Parte fraccionaria: "<< parte_fraccionaria <<endl;
